@@ -34,8 +34,8 @@ var (
 )
 
 var oauthCfg = &oauth.Config {
-         ClientId: "856328158768-ho4me8n1hkf31nlr0nfca6279klv1la4.apps.googleusercontent.com",
-     ClientSecret: "4Nq-c7U5ue84ykNjYOXeSyva",
+         ClientId: TO-DO,
+     ClientSecret: TO-DO,
      AuthURL: "https://accounts.google.com/o/oauth2/auth",
          TokenURL: "https://accounts.google.com/o/oauth2/token",
      RedirectURL: "http://localhost:8080/oauth2callback",
@@ -43,8 +43,8 @@ var oauthCfg = &oauth.Config {
     }
 
 var oauthFacebookCfg = &oauth.Config {
-         ClientId: "333516180145898", 
-         ClientSecret: "dbd8d754cdb3b0358bcc9fef0acdf1f0",
+         ClientId: "TO-DO, 
+         ClientSecret:TO-DO,
     AuthURL: "https://www.facebook.com/dialog/oauth",
     TokenURL: "https://graph.facebook.com/oauth/access_token",
     RedirectURL: "http://localhost:8080/oauth2callbackFacebook",
