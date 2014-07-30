@@ -43,7 +43,7 @@ var oauthCfg = &oauth.Config {
     }
 
 var oauthFacebookCfg = &oauth.Config {
-         ClientId: "TO-DO, 
+         ClientId: TO-DO, 
          ClientSecret:TO-DO,
     AuthURL: "https://www.facebook.com/dialog/oauth",
     TokenURL: "https://graph.facebook.com/oauth/access_token",
@@ -70,14 +70,12 @@ func handleRoot(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleAuthorizeFacebook(w http.ResponseWriter, r *http.Request) {
-    //Get the Google URL which shows the Authentication page to the user
     url := oauthFacebookCfg.AuthCodeURL("")
 
-    //redirect user to that page
     http.Redirect(w, r, url, http.StatusFound)
 }
 func handleAuthorize(w http.ResponseWriter, r *http.Request) {
-    //Get the Google URL which shows the Authentication page to the user
+
     url := oauthCfg.AuthCodeURL("")
 
     //redirect user to that page
